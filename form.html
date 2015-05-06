@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ページタイトル</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+div {
+  border 1px solid red;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-header">お問い合わせフォーム v0.0.1</h1>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-md-1" style="background:#ccc;">1</div>
+        <div class="col-md-1" style="background:#999;">2</div>
+        <div class="col-md-1" style="background:#ccc;">3</div>
+        <div class="col-md-1" style="background:#999;">4</div>
+        <div class="col-md-1" style="background:#ccc;">5</div>
+        <div class="col-md-1" style="background:#999;">6</div>
+        <div class="col-md-1" style="background:#ccc;">7</div>
+        <div class="col-md-1" style="background:#999;">8</div>
+        <div class="col-md-1" style="background:#ccc;">9</div>
+        <div class="col-md-1" style="background:#999;">10</div>
+        <div class="col-md-1" style="background:#ccc;">11</div>
+        <div class="col-md-1" style="background:#999;">12</div>
+      </div>
+
+      <div class="well">これだとずれる(３分割して入れ子にしている)<br>あ、内側のcol-md-4のform-group取ればそろった！</div>
+      <div class="form-group">
+        <div class="col-md-4">
+          <label for="name" class="control-label col-md-6">お名前</label>
+          <div class="col-md-6">
+            <input type="text" id="name" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="control-label col-md-3">e-mail</label>
+          <div class="col-md-9">
+            <input type="text" id="email" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="naiyou" class="control-label col-md-6">内容</label>
+          <div class="col-md-6">
+            <input type="text" id="naiyou" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company" class="control-label col-md-2">会社名</label>
+        <div class="col-md-10">
+          <input type="text" id="company" class="form-control">
+        </div>
+      </div>
+
+      <div class="well">これだと揃う(入れ子にしていない)</div>
+      <div class="form-group">
+        <label for="name" class="control-label col-md-2">お名前</label>
+        <div class="col-md-2">
+          <input type="text" id="name" class="form-control">
+        </div>
+        <label for="email" class="control-label col-md-1">e-mail</label>
+        <div class="col-md-2">
+          <input type="text" id="email" class="form-control">
+        </div>
+        <label for="naiyou" class="control-label col-md-1">内容</label>
+        <div class="col-md-4">
+          <input type="text" id="naiyou" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company" class="control-label col-md-2">会社名</label>
+        <div class="col-md-10">
+          <input type="text" id="company" class="form-control">
+        </div>
+      </div>
+
+      <div class="well">小さく</div>
+      <div class="form-group form-group-sm">
+        <label for="name" class="control-label col-md-2">お名前</label>
+        <div class="col-md-2">
+          <input type="text" id="name" class="form-control">
+        </div>
+        <label for="email" class="control-label col-md-1">e-mail</label>
+        <div class="col-md-2">
+          <input type="text" id="email" class="form-control">
+        </div>
+        <label for="naiyou" class="control-label col-md-1">内容</label>
+        <div class="col-md-4">
+          <input type="text" id="naiyou" class="form-control">
+        </div>
+      </div>
+      <div class="form-group form-group-sm">
+        <label for="company" class="control-label col-md-2">会社名</label>
+        <div class="col-md-10">
+          <input type="text" id="company" class="form-control">
+        </div>
+      </div>
+
+      <div class="well">test1: 同じ行に高さの異なる項目を入れると次の行の間隔が開く</div>
+      <div class="form-group">
+        <label for="name" class="control-label col-md-2">お名前</label>
+        <div class="col-md-2">
+          <input type="text" id="name" class="form-control">
+        </div>
+        <label for="biko" class="control-label col-md-offset-4 col-md-2">備考</label>
+        <div class="col-md-2">
+          <input type="text" id="biko" class="form-control" style="height:100px;">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label col-md-2">e-mail</label>
+        <div class="col-md-2">
+          <input type="text" id="email" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="naiyou" class="control-label col-md-2">内容</label>
+        <div class="col-md-4">
+          <input type="text" id="naiyou" class="form-control">
+        </div>
+      </div>
+
+      <div class="well">test2</div>
+      <div class="form-group">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="name" class="control-label col-md-3">お名前</label>
+            <div class="col-md-9">
+              <input type="text" id="name" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="control-label col-md-3">e-mail</label>
+            <div class="col-md-9">
+              <input type="text" id="email" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="naiyou" class="control-label col-md-3">内容</label>
+            <div class="col-md-9">
+              <input type="text" id="naiyou" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reg-date" class="control-label col-md-3">登録日付</label>
+            <div class="col-md-9">
+              <input type="text" id="reg-date" class="form-control datetime">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="amount1" class="control-label col-md-3">金額１</label>
+            <div class="col-md-9">
+              <input type="text" id="amount1" class="form-control amount">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="number1" class="control-label col-md-3">数値のみ</label>
+            <div class="col-md-9">
+              <input type="text" id="number1" class="form-control numeric-only">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="label1" class="col-md-12">ラベル１</label>
+            <div class="col-md-12">
+              <select class="form-control" id="label1">
+                <option>お届け先氏名で領収書を発行</option>
+                <option>指定した名前で領収書を発行</option>
+                <option>領収書は不要</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-push-3 col-md-9">
+              <input type="text" id="label2" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="label3" class="control-label col-md-2">AA</label>
+            <div class="col-md-10">
+              <input type="text" id="label3" class="form-control" readonly="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="label4" class="control-label col-md-2">BB</label>
+            <div class="col-md-10">
+              <input type="text" id="label4" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="biko" class="col-md-12">備考</label>
+          <div class="col-md-12">
+            <input type="text" id="biko" class="form-control" style="height:100px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="well">test3</div>
+      <div class="form-group has-success">
+        <label for="label11" class="control-label col-md-2">ラベル11 (has-success)</label>
+        <div class="col-md-10">
+          <input type="text" id="label11" class="form-control">
+        </div>
+      </div>
+      <div class="form-group has-warning">
+        <label for="label12" class="control-label col-md-2">ラベル12 (has-warning)</label>
+        <div class="col-md-10">
+          <input type="text" id="label12" class="form-control">
+        </div>
+      </div>
+      <div class="form-group has-error">
+        <label for="label13" class="control-label col-md-2">ラベル13 (has-error)</label>
+        <div class="col-md-10">
+          <input type="text" id="label13" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="label14" class="control-label col-md-2">ラベル14</label>
+        <div class="col-md-9">
+          <input type="text" id="label14" class="form-control">
+        </div>
+        <div class="col-md-1">
+          <p class="form-control-static">MTB</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 control-label">オプションを選択してください</label>
+        <div class="col-md-9">
+          <label class="checkbox-inline"><input type="checkbox">ギフト包装</label>
+          <label class="checkbox-inline"><input type="checkbox">配送日指定</label>
+          <label class="checkbox-inline disabled"><input type="checkbox" disabled="true">メール便</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2 control-label">色の選択</label>
+        <div class="col-md-10">
+          <label class="radio-inline"><input type="radio" name="iro">赤</label>
+          <label class="radio-inline"><input type="radio" name="iro">青</label>
+          <label class="radio-inline"><input type="radio" name="iro">緑</label>
+          <label class="radio-inline disabled"><input type="radio" name="iro" disabled="true">白</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success btn-lg">Sound</button>
+        <button class="btn btn-success btn-lg active">Music</button>
+        <button class="btn btn-success btn-lg disabled">Full Screen</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/jquery-2.0.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript">
+$(function() {
+  $('.datetime').blur(function(e) {
+    var inVal = this.value;
+    if (inVal == "") {
+      return;
+    }
+    if (inVal.match(/[0-9]{8}/)) {
+      outVal = inVal.substring(0,4) + "/" +
+               inVal.substring(4,6) + "/" +
+               inVal.substring(6,8);
+      this.value = outVal;
+    }
+  });
+
+  $('.amount').blur(function(e) {
+    var inVal = this.value;
+    if (inVal == "") {
+      return;
+    }
+    var outVal = String(inVal).replace(/(\d)(?=(\d\d\d)+(?!\d))/g,'$1,');
+    this.value = outVal;
+  });
+
+  $('.amount').focus(function(e) {
+    var inVal = this.value;
+    if (inVal == "") {
+      return;
+    }
+    var outVal = String(inVal).replace(",", "", "g");
+    this.value = outVal;
+  });
+
+  // jquery.numeric.jsをインストールしておく
+  $('.numeric-only').numeric({ decimal: false });
+  /*
+  $('.numeric-only').keypress(function(e) {
+    if ((e.which < "0".charCodeAt(0) || "9".charCodeAt(0) < e.which) && e.which != 8 && e.which != 0) {
+      return false;
+    }
+  });
+  */
+});
+  </script>
+</body>
+</html>

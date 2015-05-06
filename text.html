@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ページタイトル</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+div {
+  border 1px solid red;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-header">テキスト</h1>
+    <div class="row">
+      <p class="well">文字の配置</p>
+    </div>
+    <div class="row bg-info">
+      <p class="text-left">左に配置<br>(text-left)</p>
+      <p class="text-center">中央に配置<br>(text-center)</p>
+      <p class="text-right">右に配置<br>(text-right)</p>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">文字色と背景色</p>
+    </div>
+    <div class="row">
+      <p class="text-primary">この文章は text-primary で表示しています。</p>
+      <p class="text-success">この文章は text-success で表示しています。</p>
+      <p class="text-info">この文章は text-info で表示しています。</p>
+      <p class="text-warning">この文章は text-warning で表示しています。</p>
+      <p class="text-danger">この文章は text-denger で表示しています。</p>
+      <p class="text-muted">この文章は text-muted で表示しています。</p>
+    </div>
+    <div class="row">
+      <p class="bg-primary">この文章は bg-primary で表示しています。</p>
+      <p class="bg-success">この文章は bg-success で表示しています。</p>
+      <p class="bg-info">この文章は bg-info で表示しています。</p>
+      <p class="bg-warning">この文章は bg-warning で表示しています。</p>
+      <p class="bg-danger">この文章は bg-denger で表示しています。</p>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">囲み枠</p>
+    </div>
+    <div class="row">
+      <div class="jumbotron">
+        <h1>jumbotron</h2>
+        <p>ジャンボトロンはWebサイトのタイトルなどに活用できる見出しです</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="well">
+        <h1>well</h2>
+        <p>ブロック要素に well というクラスを適用すると、その範囲全体を角丸の背景色で囲って表示できます。コラムのような囲み記事を作成する場合などに活用できるでしょう。</p>
+      </div>
+      <div class="well well-lg">
+        <h1>well-lg</h2>
+        <p>ブロックを大きくする場合は well-lg を指定します。wellの指定をお忘れなく(well + well-lg)</p>
+      </div>
+      <div class="well well-sm">
+        <h1>well-sm</h2>
+        <p>ブロックを小さくする場合は well-sm を指定します。wellの指定をお忘れなく(well + well-sm)</p>
+      </div>
+    <div class="row">
+      <div class="thumbnail">
+        <h1>thumbnail</h2>
+        <p>角丸の枠線で囲む場合は thumbnail を指定します</p>
+        <p class="caption">caption を付けると周囲に余白が付きます</p>
+      </div>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">ページヘッダー</p>
+    </div>
+    <div class="row">
+      <h1 class="page-header">ページヘッダー <small>(h1 + page-header 下線が付く)</small></h1>
+      <h1>ページヘッダー <small>(h1のみ)</small></h1>
+      <h2>ページヘッダー <small>(h2のみ)</small></h2>
+      <h3>ページヘッダー <small>(h3のみ)</small></h3>
+      <h4>ページヘッダー <small>(h4のみ)</small></h4>
+      <h5>ページヘッダー <small>(h5のみ)</small></h5>
+      <h6>ページヘッダー <small>(h6のみ)</small></h6>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">リストの書式 (ul, li)</p>
+    </div>
+    <div class="row">
+      <ul>
+        <li>はじめに</li>
+        <li>各部門賞の発表</li>
+          <ul>
+            <li>技術賞</li>
+            <li>アイデア賞</li>
+              <ul>
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>アイデアは愛である</li>
+              </ul>
+            <li>デザイン賞</li>
+          </ul>
+        <li>グランプリの発表</li>
+        <li>総評</li>
+      </ul>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">リストを横に並べて表示するには list-inline を指定します</p>
+    </div>
+    <div class="row">
+      <ul class="list-inline">
+        <li>はじめに</li>
+        <li>各部門賞の発表</li>
+        <li>グランプリの発表</li>
+        <li>総評</li>
+      </ul>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">定義リストの表示 (dl, dt, dd)</p>
+    </div>
+    <div class="row">
+      <dl>
+        <dt>HTML</dt>
+        <dd>Web制作の基本となる言語で、Webページに表示する内容（文字や画像、リンク情報など）をタグを使って記述していきます。</dd>
+        <dt>CSS</dt>
+        <dd>サイズや色、枠線、余白といった書式を指定する言語です。WebサイトのデザインはこのCSSを使って指定していきます。</dd>
+        <dt>JavaScript</dt>
+        <dd>閲覧者のマウス操作などに合わせて動きのあるWebページを作成する場合に利用する言語です。Javaと名前が似ているが、異なるプログラミング言語である。オブジェクト指向のスクリプト言語であることを特徴とする。実行環境が主にウェブブラウザに実装され、動的なウェブサイト構築や、リッチインターネットアプリケーションなど高度なユーザインタフェースの開発に用いられる。</dd>
+      </dl>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+
+    <div class="row">
+      <p class="well">画像の書式</p>
+    </div>
+    <div class="row">
+      <p>親要素の幅に合わせて縮小して表示する場合は img-responsive を指定します。画像が小さい場合は拡大されません！</p>
+      <div class="col-md-4 bg-danger">
+        <img src="images/image03.jpg" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <p>画像の四隅を角丸に(img-rounded)</p>
+        <img src="images/image02.jpg" class="img-responsive img-rounded">
+      </div>
+      <div class="col-md-4">
+        <p>画像を楕円形で(img-circle)</p>
+        <img src="images/image02.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-4">
+        <p>画像の周囲を角丸の枠線で囲む(img-thumbnail)</p>
+        <img src="images/image02.jpg" class="img-responsive img-thumbnail">
+      </div>
+    </div>
+    <div class="row">
+      <h2></h2>
+    </div>
+  </div> <!-- container -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

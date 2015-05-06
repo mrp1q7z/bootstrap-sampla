@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ページタイトル</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+div {
+  border 1px solid red;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-header">グリッド</h1>
+    <div class="row">
+      <p class="well">Bootstrapはページ全体を12列に分けて構成するグリッドシステムです</p>
+    </div>
+    <div class="row">
+      <div class="col-md-1" style="background:#ccc;height:50px;">col1</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col2</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col3</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col4</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col5</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col6</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col7</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col8</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col9</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col10</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col11</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col12</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">ブロック幅の合計が12になるようにします</p>
+    </div>
+    <div class="row">
+      <div class="col-md-2" style="background:#ccc;height:50px;">カラムA<br>(2カラム)</div>
+      <div class="col-md-6" style="background:#999;height:50px;">カラムB<br>(6カラム)</div>
+      <div class="col-md-4" style="background:#ccc;height:50px;">カラムC<br>(4カラム)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">合計幅が12より少ない場合は右端に余白が設けられます</p>
+    </div>
+    <div class="row">
+      <div class="col-md-5" style="background:#ccc;height:50px;">カラムA<br>(5カラム)</div>
+      <div class="col-md-3" style="background:#999;height:50px;">カラムB<br>(3カラム)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">合計幅が12より多い場合は以降のブロックが次の行に送られて配置されます</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background:#ccc;height:50px;">カラムA<br>(6カラム)</div>
+      <div class="col-md-4" style="background:#999;height:50px;">カラムB<br>(4カラム)</div>
+      <div class="col-md-5" style="background:#ccc;height:50px;">カラムC<br>(5カラム)</div>
+      <div class="col-md-3" style="background:#999;height:50px;">カラムD<br>(3カラム)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">グリッドを入れ子にすることも可能です。内側のグリッドも幅が12列に分割されます</p>
+    </div>
+    <div class="row">
+      <div class="col-md-9" style="background:#ccc;height:100px;">カラムA<br>(9カラム)
+        <div class="row">
+          <div class="col-md-1" style="background:#aaa;height:50px;">1</div>
+          <div class="col-md-1" style="background:#999;height:50px;">2</div>
+          <div class="col-md-1" style="background:#aaa;height:50px;">3</div>
+          <div class="col-md-1" style="background:#999;height:50px;">4</div>
+          <div class="col-md-1" style="background:#aaa;height:50px;">5</div>
+          <div class="col-md-1" style="background:#999;height:50px;">6</div>
+          <div class="col-md-1" style="background:#aaa;height:50px;">7</div>
+          <div class="col-md-1" style="background:#999;height:50px;">8</div>
+          <div class="col-md-1" style="background:#aaa;height:50px;">9</div>
+          <div class="col-md-1" style="background:#999;height:50px;">10</div>
+          <div class="col-md-1" style="background:#aaa;height:50px;">11</div>
+          <div class="col-md-1" style="background:#999;height:50px;">12</div>
+        </div>
+      </div>
+      <div class="col-md-3" style="background:#999;height:100px;">カラムB<br>(3カラム)
+        <div class="row">
+          <div class="col-md-3" style="background:#aaa;height:50px;">3</div>
+          <div class="col-md-4" style="background:#888;height:50px;">4</div>
+          <div class="col-md-5" style="background:#aaa;height:50px;">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">間隔を開けるにはオフセットを指定します</p>
+    </div>
+    <div class="row">
+      <div class="col-md-3" style="background:#ccc;height:50px;">カラムA<br>(3カラム)</div>
+      <div class="col-md-3 col-md-offset-6" style="background:#999;height:50px;">カラムB<br>(3カラム + オフセット6)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">位置をずらして配置するにはpush/pullを指定します</p>
+    </div>
+    <div class="row">
+      <div class="col-md-1" style="background:#ccc;height:50px;">col1</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col2</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col3</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col4</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col5</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col6</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col7</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col8</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col9</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col10</div>
+      <div class="col-md-1" style="background:#ccc;height:50px;">col11</div>
+      <div class="col-md-1" style="background:#999;height:50px;">col12</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-md-push-1" style="background:#ccc;height:50px;">カラムA<br>(3カラム + push1)</div>
+      <div class="col-md-3 col-md-offset-6 col-md-pull-2" style="background:#999;height:50px;">カラムB<br>(3カラム + オフセット6 + pull2)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">push/pullで位置を入れ替えることもできます</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background:#ccc;height:50px;">カラムA</div>
+      <div class="col-md-6" style="background:#999;height:50px;">カラムB</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-push-6" style="background:#ccc;height:50px;">カラムA<br>(push6)</div>
+      <div class="col-md-6 col-md-pull-6" style="background:#999;height:50px;">カラムB<br>(pull6)</div>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+    <div class="row">
+      <p class="well">画像の幅をグリッド幅と合わせるには img-responsive を指定します</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="background:#ccc;height:250px;">
+        <img src="images/image01.jpg" class="img-responsive">
+      </div>
+      <div class="col-md-3" style="background:#999;height:250px;">
+        <img src="images/image02.jpg" class="img-responsive">
+      </div>
+      <div class="col-md-3" style="background:#ccc;height:250px;">
+        <img src="images/image03.jpg" class="img-responsive">
+      </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
